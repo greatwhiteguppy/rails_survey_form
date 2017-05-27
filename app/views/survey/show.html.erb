@@ -1,0 +1,13 @@
+<% if flash[:success] %>
+    <div id="green">
+        <p><%= flash[:success] %></p>
+    </div>
+<% end %>
+<div id="submitted">
+    <h2>Submitted Information</h2>
+        <p>Name: <%= @answer['name'] %></p>
+        <p>Dojo Location: <%= @answer['location'] %></p>
+        <p>Favorite Language: <%= @answer['language'] %></p>
+        <p>Comment: <%= @answer['comment'] %></p>
+        <a href ="/" id="back">Go Back</a>
+</div>
